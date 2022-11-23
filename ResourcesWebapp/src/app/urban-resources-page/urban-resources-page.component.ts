@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UrbanResourcesMapComponent } from '../urban-resources-map/urban-resources-map.component';
 
 @Component({
   selector: 'urban-resources-page',

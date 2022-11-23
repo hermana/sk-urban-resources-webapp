@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MapViewComponent } from './map-view/map-view.component';
 import { UrbanResourcesPageComponent } from './urban-resources-page/urban-resources-page.component';
+import { UrbanResourcesMapComponent } from './urban-resources-map/urban-resources-map.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MapViewComponent,
-    UrbanResourcesPageComponent
+    UrbanResourcesPageComponent,
+    UrbanResourcesMapComponent
   ],
   imports: [
     BrowserModule,
