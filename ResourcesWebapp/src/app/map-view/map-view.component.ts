@@ -38,6 +38,7 @@ export class MapViewComponent implements OnInit {
   constructor(private http: HttpClient) {
     // Lazy load google maps API
     // FIXME: Move to root service
+    console.log(this.apiUrl)
     this.apiLoaded = http.jsonp(this.apiUrl, 'callback').pipe(
       map(() => true),
       catchError(() => of(false))
