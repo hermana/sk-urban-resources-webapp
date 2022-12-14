@@ -14,7 +14,8 @@ import { catchError, map } from 'rxjs/operators';
 export class MapViewComponent implements OnInit {
 
   apiLoaded: Observable<boolean>;
-  apiUrl: string = 'https://maps.googleapis.com/maps/api/js?key=' + environment.GOOGLE_MAP_API_KEY
+  apiUrl: string = 
+    'https://maps.googleapis.com/maps/api/js?key=' + environment.GOOGLE_MAP_API_KEY + '&callback=initMap'
 
   resourceLocations = [] //FIXME: create a model to type this
 
@@ -38,10 +39,10 @@ export class MapViewComponent implements OnInit {
   constructor(private http: HttpClient) {
     // Lazy load google maps API
     // FIXME: Move to root service
-    console.log(this.apiUrl)
     this.apiLoaded = http.jsonp(this.apiUrl, 'callback').pipe(
       map(() => true),
-      catchError(() => of(false))
+      catchError((err:any) => of(err))
+      // catchError((err) => of(false))
     );
    }
 
