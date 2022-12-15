@@ -15,7 +15,7 @@ export class MapViewComponent implements OnInit {
 
   apiLoaded: Observable<boolean>;
   apiUrl: string = 
-    'https://maps.googleapis.com/maps/api/js?key=' + environment.GOOGLE_MAP_API_KEY + '&callback=initMap'
+    'https://maps.googleapis.com/maps/api/js?key=' + environment.GOOGLE_MAP_API_KEY
 
   resourceLocations = [] //FIXME: create a model to type this
 
