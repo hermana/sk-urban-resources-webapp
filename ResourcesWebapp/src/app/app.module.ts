@@ -23,7 +23,7 @@ import { CommonModule } from '@angular/common';
     AppRoutingModule,
     GoogleMapsModule,
     HttpClientJsonpModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [
     HttpClient, 
