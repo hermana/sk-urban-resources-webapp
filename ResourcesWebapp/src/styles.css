@@ -1,4 +1,4 @@
-/**
+/* /**
 * Template Name: ZenBlog - v1.3.0
 * Template URL: https://bootstrapmade.com/zenblog-bootstrap-blog-template/
 * Author: BootstrapMade.com
@@ -11,6 +11,8 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+@import url('node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css');
+
 :root {
     scroll-behavior: smooth;
   }
@@ -35,7 +37,7 @@
   h4,
   h5,
   h6 {
-    font-family: var(--font-primary);
+    font-family: sans-serif
   }
   
   #main {
@@ -1307,4 +1309,4 @@
   
   .footer .credits a {
     color: var(--color-white);
-  }
+  } 
